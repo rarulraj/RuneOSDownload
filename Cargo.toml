@@ -1,0 +1,16 @@
+
+name = "crate_name"
+version = "0.1.0"
+authors = ["Author Name <Arun and Jared>"]
+
+# the profile used for `cargo build`
+[profile.dev]
+panic = "abort" # disable stack unwinding on panic
+
+# the profile used for `cargo build --release`
+[profile.release]
+panic = "abort" # disable stack unwinding on pani
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
